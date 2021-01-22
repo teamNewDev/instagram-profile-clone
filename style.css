@@ -98,7 +98,7 @@ header {
     height: 7em;
     width: 7em;
     border-radius: 50%;
-    background: linear-gradient(rgb(215, 15, 151), rgb(216, 177, 34));
+    background: linear-gradient(rgb(174, 5, 120), rgb(216, 177, 34));
 }
 
 .inner-bg {
@@ -238,6 +238,7 @@ nav.main-nav {
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--background);
     box-shadow: 2px 0 2px var(--border);
     position: fixed;
