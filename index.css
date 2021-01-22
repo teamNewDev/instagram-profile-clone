@@ -35,12 +35,26 @@ body{
     background:#181818;
     justify-content: center;
     min-height:100vh;
+    overflow:hidden !important;
 }
 
 .instagram__page{
     position:relative;
     width:370px;
-    overflow-x:hidden;
+    overflow-x:hidden !important;
+}
+
+.nav__bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100;
+    background:#181818;
+    height:3rem;
 }
 
 .container{
@@ -50,7 +64,6 @@ body{
 
 .top__bar{
     height:4rem;
-    /* background:pink; */
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -83,7 +96,7 @@ body{
     fill:#0096ff;
     position:absolute;
     top:1px;
-    margin-left:5px;
+    right:-2rem;
 }
 
 .top__menu__icon svg{
@@ -225,25 +238,34 @@ body{
     align-items:center;
     justify-content: space-between;
     margin-top:1rem;
-    overflow:auto !important;
     width:100%;
+    overflow-X:scroll;
 }
 
+.user__story__info::-webkit-scrollbar{
+    display:none;
+}
+
+.user__story__info{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
 
 .user__story__info__single{
     text-align:center;
     background:transparent;
-
+    padding-right:1rem;
 }
 
 .user__story__info__single img{
-    width:100%;
-    height:100%;
+    height:70px;
+    width:70px;
     padding:3px;
     transform:scale(1);
     border-radius:60%;
     object-fit:cover;
     object-position:top top;
+    border:2px solid #4c494a;
 }
 
 .user__story__info h4{
@@ -252,6 +274,7 @@ body{
     font-weight:bold;
     margin-top:1px;
     font-family:'customLight';
+    text-align:center;
 }
 
 .gallery__section{
@@ -262,41 +285,27 @@ body{
     display:flex;
     align-items:center;
     justify-content: space-between;
-}
-
-.collage__icon{
-    width:50%;
-    position:relative;
-    margin-top:2rem;
-}
-
-.collage__icon svg{
-    width:2rem;
-    height:3rem;
-    fill:#fdfeff;
-    position:absolute;
-    left:50%;
-    bottom:0;
-    transform:translateX(-50%);
+    width:90%;
+    margin:auto;
 }
 
 .current{
-    border-bottom:2px solid white;
-}
-
-.group__icon{
-    width:50%;
     position:relative;
-    margin-top:2rem;
+    /* border:2px solid white; */
 }
 
-.group__icon svg{
-    width:2.5rem;
-    height:3rem;
-    fill:#fdfeff;
+.current svg{
+    fill:white;
+}
+
+
+.current::before{
+    content:'';
     position:absolute;
-    left:50%;
-    bottom:0;
+    left:0;
+    border-bottom:1px solid white;
+    width:7rem;
+    bottom:-3px;
     transform:translateX(-50%);
 }
 
@@ -309,11 +318,17 @@ body{
 }
 
 .img__single{
-    height:7rem;
+    height:8.5rem;
+    transform:scale(1)
 }
 
 .gallery__section__imgs img{
     width:100%;
+}
+
+/* new code base */
+.test_out h1{
+    color:white;
 }
 
 

@@ -29,6 +29,11 @@ const UserStoryInfo = () => {
                 <img src="Assets/imgs/Radio.jpg" />
                 <h4>Radio</h4>
             </div>
+
+            <div class="user__story__info__single">
+                <img src="Assets/imgs/Radio.jpg" />
+                <h4>Radio</h4>
+            </div>
         </div>
         `
     )
