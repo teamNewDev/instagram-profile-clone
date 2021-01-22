@@ -16,7 +16,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid red; */
-    font-size: 15px;
+    font-size: 14px;
     background-color: var(--background);
     color: var(--text);
     outline: none;
