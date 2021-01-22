@@ -1,0 +1,3 @@
+blue kind of color : #0095f6
+text kind of : #262626
+background kind of : #969696;
