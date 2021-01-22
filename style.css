@@ -1,5 +1,5 @@
 :root {
-    --background: #1c1e21;
+    --background: #121315;
     --text: white;
     --blue: #0095f6;
     --link: #cdcdcd;
@@ -37,10 +37,11 @@ body {
 header {
     display: grid;
     grid-template-columns: 2em auto 2em;
-    padding: 0.7em 0.4em;
+    padding: 0.7em 0.8em;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10vh;
 }
 
 .head-icon {
@@ -70,6 +71,8 @@ header {
 
 .handle {
     padding: 0 3em;
+    display: flex;
+    align-items: center;
 }
 
 .profile {
@@ -140,7 +143,7 @@ button {
     border: none;
     text-align: center;
     background: black;
-    padding: 0.5em;
+    padding: 0.8em;
     border-radius: 0.3em;
     border: 1px solid #494848;
 }
@@ -228,7 +231,7 @@ nav.gallery-nav .posts i, nav.main-nav .active{
     background-color: var(--blue);
     width: fit-content;
     border-radius: 2em;
-    padding: 0.5em 1em;
+    padding: 0.8em 1em;
 }
 
 nav.main-nav {
@@ -241,6 +244,7 @@ nav.main-nav {
     bottom: 0;
     width: 100%;
     z-index: 200;
+    height: 10vh;
 }
 
 
