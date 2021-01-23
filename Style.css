@@ -1,0 +1,401 @@
+body {
+
+    font-size: 14px;
+
+    font-family: tahoma;
+
+    background: #181818;
+
+    user-select: none;
+
+    color: white;
+
+}
+
+.status_Bar{
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  height: 50px;
+
+  background: #181818;
+
+  border-bottom: 1px solid #252525;
+
+  font-weight: 600;
+
+  padding: 0px 4px 0px 5px;
+
+}
+
+.stat{
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.dynamic_nav_icons{
+
+  width: 40px;
+
+  height: 28px;
+
+  margin-top: 5px;
+
+  margin-left: 5px;
+
+}
+
+.nav_bar{
+
+  font-size: 20pt;
+
+  display: flex;
+
+  width: 100%;
+
+  background: #181818;
+
+  position: fixed;
+
+  bottom: 0;
+
+  vertical-align: center;
+
+  border: 1px solid #252525;
+
+  height: 48px;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.profile_Status{
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 20px 0px 20px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.profile_Outline{
+
+  border-radius: 60px;
+
+  background: linear-gradient(purple, deeppink, orange);
+
+  height: 104px;
+
+  width: 104px;
+
+  justify-content: center;
+
+  padding: 2px;
+
+  align-items: center;
+
+}
+
+.profile_Picture{
+
+  border-radius: inherit;
+
+  height: 100px;
+
+  border: 3.5px solid black;
+
+  width: 100px;
+
+}
+
+.stat{
+
+  padding-left: 6px;
+
+  display: flex;
+
+  justify-items: space-between;
+
+  align-items: center;
+
+}
+
+.Activity{
+
+  font-size: 12px;
+
+  display: flex;
+
+  margin-right: 5px;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.Activity > div{
+
+padding-left: 15px;  
+
+}
+
+.Count{
+
+  font-weight: 600;
+
+  font-size: 19px;
+
+  text-align: center;
+
+}
+
+.stat_Text{
+
+  font-size: 12px;
+
+  padding: 15px;
+
+  padding-top: 0px;
+
+}
+
+a{
+
+  color: #E0F1FF;
+
+  text-decoration: none;
+
+}
+
+.list{
+
+  font-size: 12px;
+
+  list-style: none;
+
+}
+
+.Connect_button{
+
+  background: #121212;
+
+  outline: none;
+
+  width: 100px;
+
+  color: white;
+
+  font-weight: 500;
+
+  font-size: 12px;
+
+  border-radius: 4px;
+
+  border: 1.5px solid gray;
+
+  height: 32px;
+
+}
+
+.add_user{
+
+  background: #121212;
+
+  display: block;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  justify-content: center;
+
+ align-content: center;
+
+}
+
+.media_icons{
+
+  display: flex;
+
+  height: auto;
+
+  font-size: 20px;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  transition: cubic-bezier(0.86, 0, 0.07, 1);
+
+  border-bottom: 1px solid #252525;
+
+}
+
+.media_icons > i:first-child{
+
+  color: white;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid white;
+
+}
+
+.media_icons > i{
+
+border-bottom: 1px transparent;
+
+ width: 55px;
+
+ height: 5px;
+
+ color: gray;
+
+ padding-bottom:  32px;
+
+}
+
+.media_icons > i:hover{
+
+  border-bottom: 1px solid white;
+
+ width: 55px;
+
+ height: 5px;
+
+ color: white;
+
+  padding-bottom: 30px;
+
+}
+
+.Connect_button:active{
+
+  background: #363636;
+
+  border: 1px solid gray;
+
+}
+
+.back{
+
+  width: 30px;
+
+  height: 32px;
+
+  margin-top: 5px;
+
+  padding-right: 8px;
+
+}
+
+.smart_Links{
+
+  display: flex;
+
+ align-items: center; 
+
+ padding: 10px;
+
+ overflow-x: auto;
+
+ border-bottom: 1px solid #252525
+
+}
+
+.smart_Links::-webkit-scrollbar{
+
+  width: 0;
+
+  height: 0;
+
+}
+
+.links{
+
+  text-align: center;
+
+  font-size: 10px;
+
+  padding-left: 10px;
+
+}
+
+.links:first-child{
+
+  padding-left: 0px;
+
+}
+
+.media_files{
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.media_files > img{
+
+ max-width: 100px;
+
+}
+
+.links_outline{
+
+  height: 70px;
+
+  width: 70px;
+
+  background: gray;
+
+  display: flex;
+
+  color: black;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  border-radius: 50px;
+
+}
+
+.links_body{
+
+  height: 68px;
+
+  width: 68px;
+
+  border: 3px solid #181818;
+
+  border-radius: 50px;
+
+}
+
+.connect{
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-around;
+
+}
