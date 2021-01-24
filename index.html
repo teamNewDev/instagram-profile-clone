@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-5-pro-master/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="App.js" type="module"></script>
+    <script type="module">
+        const videoBox = document.querySelectorAll(".video");
+        const video1 = document.querySelector("#video1");
+        const video2 = document.querySelector("#video2");
+
+        function playPause(myVideo, icon) { 
+            if (myVideo.paused) {
+                icon.classList.replace("fa-play", "fa-pause")
+                myVideo.play(); 
+            }else {
+                icon.classList.replace("fa-pause", "fa-play")
+                myVideo.pause();
+            }
+                
+        } 
+
+        videoBox.forEach(video => {
+            video.addEventListener("click", (e)=>{
+                if(e.target.id == "video1"){
+                    const icon = e.target.parentElement.querySelector("i");
+                    playPause(video1, icon)
+                }else if(e.target.id == "video2"){
+                    const icon = e.target.parentElement.querySelector("i");
+                    playPause(video2, icon)
+                }
+            })
+        })
+    </script>
+</body>
+</html>
