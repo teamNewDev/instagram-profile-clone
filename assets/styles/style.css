@@ -1,0 +1,455 @@
+/* import animations css module */
+@import url("animations.css");
+
+/* set theme colors */
+:root {
+	/*backgrounds*/
+	--html: linear-gradient(#d82c7d, #f99b4a);
+	--body: #1a1a1a;
+	--profile-picture: linear-gradient(#d82c7d, #f99b4a);
+	--button: #111;
+	--button-primary: #0095f6;
+	--button-clicked: #333;
+	--popup: #222;
+	--popup-overlay: rgba(0, 0, 0, 0.274);
+	/*colors*/
+	--loader-logo: #aaa;
+	--text: #fff;
+	/*transform*/
+	--centralized: translateX(-50%) translateY(50%);
+}
+
+/*overwrite default css*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: var(--text);
+	fill: var(--text);
+	font-family: sans-serif;
+}
+
+/* style default elements to fit theme */
+button {
+	padding: 0.5em;
+	border-radius: 5px;
+	background: var(--button);
+	color: #fff;
+	border: 2px solid #666;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button.primary-button {
+	background: var(--button-primary);
+	border-color: var(--button-primary);
+}
+
+button:active {
+	background: var(--button-clicked);
+}
+
+html {
+	background: var(--html);
+}
+
+/* style the main application */
+
+/* app container */
+.app__container {
+	background: var(--body);
+	padding-top: 50px;
+	margin: auto;
+	padding-bottom: 50px;
+	width: 100%;
+	height: auto;
+	max-width: 360px;
+	overflow-x: hidden;
+	border: 1px solid #666;
+}
+
+/* app class for centered elements */
+.app__centered-box {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* app loader */
+.app__loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+}
+
+.app__loader * {
+	fill: var(--loader-logo);
+}
+
+/* app navigation */
+.app__nav {
+	width: 100%;
+	height: 50px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	position: fixed;
+	max-width: 360px;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 0;
+	padding: 0.3em;
+	background: var(--body);
+	z-index: 2;
+}
+
+/* app bottom navigator */
+.app__nav.bottom {
+	top: initial;
+	bottom: 0;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	background: #000;
+}
+
+.app__nav.bottom .nav-user-image {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #555;
+	border: 1px solid #111;
+	overflow: hidden;
+}
+
+.nav-user-image img {
+	width: 100%;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item .nav-title {
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.nav-item .nav-title span {
+	padding: 0 4px;
+}
+
+.nav-item .nav-title span path {
+	fill: var(--button-primary);
+}
+
+.nav-item.right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-item .menu-button {
+	transform: rotate(90deg);
+}
+
+/* app user profile */
+
+.app__user-profile .autoset {
+	padding: 0.2em 1em;
+}
+
+/* profile details */
+.user-meta {
+	display: flex;
+}
+
+/* profile picture */
+.profile-picture {
+	width: 30%;
+	height: auto;
+}
+
+/* set round image effect */
+.picture-item {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 3px;
+	background: var(--profile-picture);
+	animation: load-story 0.7s;
+}
+
+.picture-item img {
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid var(--body);
+}
+
+/* pofile relations (followers, following...) */
+.profile-relations {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+	width: 70%;
+}
+
+/* each relation item */
+.profile-relations .relation-item {
+	text-align: center;
+	margin: auto;
+	font-size: 85%;
+}
+
+/* user biography */
+.user-biography {
+	margin-top: 0.5em;
+	font-size: 90%;
+}
+
+/* user biography items */
+.user-biography p {
+	padding: 1px 0;
+}
+
+/* user biography username */
+.user-biography .biography-username {
+	margin-bottom: 0.5em;
+}
+
+/* user actions (follow, message..) */
+.user-actions {
+	display: grid;
+	grid-template-columns: 28.3% 28.3% 28.3% 10%;
+	grid-template-rows: 35px;
+	grid-column-gap: 1%;
+	padding: 0.2em 1em;
+}
+
+/*user higlights*/
+.user-highlights {
+	height: 120px;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: scroll;
+	display: -webkit-inline-box;
+	margin-top: 0.5em;
+}
+
+/* hide scrollbar */
+.user-highlights::-webkit-scrollbar {
+	opacity: 0;
+}
+
+/* highlight item */
+.highlight-item {
+	height: 10px;
+	font-size: small;
+	text-align: center;
+}
+
+/* highlight image */
+.highlight-image {
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	margin: auto 0.2em;
+	border-radius: 50%;
+	border: 2px solid #666;
+	padding: 2px;
+}
+
+.highlight-image>img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+/*gallery styles*/
+.app__user-gallery {
+	width: 100%;
+	border-top: 1px solid #444;
+}
+
+/* gallery navigator */
+.gallery-nav {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	border-bottom: 1px solid #444;
+	border-top: 1px solid #444;
+	padding: 0 0.5em;
+	position: sticky;
+	top: 49px;
+	z-index: 4;
+	background: var(--body);
+}
+
+.gallery-nav .nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7em;
+	border-bottom: 2px solid transparent;
+}
+
+.gallery-nav .nav-item.active {
+	border-bottom-color: #fff;
+}
+
+/* main gallery content */
+.gallery-contents {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	background: #000;
+}
+
+/* gallery items */
+.gallery-contents .gallery-item {
+	background: #555;
+	border: 1px solid #333;
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em;
+}
+
+.gallery-item img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* top icons */
+.gallery-item .top-icon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 1;
+	height: 24px;
+	width: 24px;
+}
+
+.gallery-item .top-icon img {
+	width: 100%;
+}
+
+/* gallery series section styles */
+.user-series {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* series heading */
+.series-heading {
+	padding: 0.5em 1em;
+}
+
+/* main series contents */
+.user-series .series-main {
+	padding: 1em 0.5em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+}
+
+/* series items */
+.series-item {
+	overflow: hidden;
+	border-radius: 20px;
+	height: 300px;
+	border: 1px solid #666666;
+	position: relative;
+}
+
+/* series item content */
+.series-item .series-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(transparent, #00000067);
+	font-weight: bold;
+	font-size: large;
+	display: flex;
+	align-items: flex-end;
+	padding: 1em;
+}
+
+.series-item img {
+	height: 100%;
+	object-fit: cover;
+}
+
+/* app popup styles */
+.app__popup {
+	width: 100%;
+	height: 0;
+	max-width: 360px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	z-index: 5;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	transition: 0.3s;
+	transform: translateX(-50%);
+}
+
+/* popup children */
+.app__popup>div {
+	position: absolute;
+	left: 0;
+}
+
+/* main popup box */
+.popup-main {
+	height: auto;
+	width: 100%;
+	padding: 1em;
+	background: var(--popup);
+	border-radius: 20px 20px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+
+/* popup texts */
+.popup-main p {
+	padding: 0.7em;
+	font-size: 17px;
+}
+
+/* fab for popup */
+.popup-fab {
+	width: 50px;
+	padding: 3px;
+	background: #666666;
+	margin: auto;
+	border-radius: 10px;
+}
+
+/*overlay for popup*/
+.popup-overlay {
+	background: var(--popup-overlay);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}

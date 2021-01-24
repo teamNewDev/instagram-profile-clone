@@ -1,0 +1,17 @@
+@keyframes load-story {
+    25% {
+        background: none;
+    }
+
+    50% {
+        background: linear-gradient(90deg, #d82c7d 50%, transparent 50%);
+    }
+
+    75% {
+        background: linear-gradient(180deg, #d82c7d 50%, transparent 50%);
+    }
+
+    100% {
+        background: linear-gradient(#d82c7d, #f99b4a);
+    }
+}
