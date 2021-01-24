@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(./_loader.css);
+@import url(./_topbar.css);
+@import url(./_suggestions.css);
+@import url(./_profile.css);
+@import url(./_buttons.css);
+@import url(./_bio.css);
+@import url(./_scroll.css);
+@import url(./_navbar.css);
+@import url(./_tabs.css);
+@import url(./_options.css);
+@import url(./_popup.css);
+@import url(./_overlay.css);
+@import url(./_post-popup.css);
+@import url(./_posts.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1a1a1a;
+  font-family: Poppins;
+  width: 100vw;
+}
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+a,
+a:visited {
+  color: #00376b;
+}
