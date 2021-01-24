@@ -115,6 +115,7 @@ html {
 	display: grid;
 	grid-template-columns: 20% 20% 20% 20% 20%;
 	background: #000;
+	z-index: 6;
 }
 
 .app__nav.bottom .nav-user-image {
