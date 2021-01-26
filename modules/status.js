@@ -1,5 +1,5 @@
-var Status = `
-        <div class="status">
+const Status = ()=>{
+    return `<div class="status">
                         <img src="images/DJing.jpg">
                         <p>DJing</p>
                     </div>
@@ -31,4 +31,6 @@ var Status = `
                         <img src="images/Vlog.jpg">
                         <p>Vlog</p>
                     </div>`;
+}
+
 export default Status;
