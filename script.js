@@ -1,21 +1,21 @@
-import activities from './modules/activities.js'
-import bio from './modules/bio.js'
-import buttons from './modules/buttons.js'
-import credentials from './modules/credentials.js'
-import gallery from './modules/gallery.js'
-import header from './modules/header.js'
-import nav from './modules/nav.js'
+import Activities from './modules/Activities.js'
+import Bio from './modules/Bio.js'
+import Buttons from './modules/Buttons.js'
+import Credentials from './modules/Credentials.js'
+import Gallery from './modules/Gallery.js'
+import Header from './modules/Header.js'
+import Nav from './modules/Nav.js'
 
 const app = () => {
     return (
         `
-        ${header}
-        ${credentials}
-        ${bio}
-        ${buttons}
-        ${activities}
-        ${gallery}
-        ${nav}
+        ${Header()}
+        ${Credentials()}
+        ${Bio()}
+        ${Buttons()}
+        ${Activities()}
+        ${Gallery()}
+        ${Nav()}
         `
     )
 }
