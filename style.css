@@ -424,6 +424,7 @@ svg {
 #tagTab {
     width: -webkit-fill-available;
     height: 100%;
+    justify-content: center;
 }
 
 #galleryTab {
