@@ -1,9 +1,6 @@
-const TopBar = () =>
-        {
-            return (
-
-            
-         `
+const TopBar = () => {
+   return (
+     `
         <div class="top__bar container">
             <div class="layout__1">
                 <div class="back__icon" id="top__bar__icon">
@@ -56,9 +53,8 @@ const TopBar = () =>
                 </div>
             </div>
         </div>
-        `
-        )
-    }
+     `
+   )
+}
 
-
-export default TopBar
+export default TopBar;
