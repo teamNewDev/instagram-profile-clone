@@ -1,6 +1,4 @@
-
 const NavBottom = () => {
-
     return (
         `
             <div class="nav__bottom">
