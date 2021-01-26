@@ -1,9 +1,6 @@
-
-
 const UserStoryInfo = () => {
     return (
-
-    `
+      `
         <div class="user__story__info container">
             <div class="user__story__info__single">
                 <img src="Assets/imgs/DjingIcon.jpg" />
@@ -35,8 +32,8 @@ const UserStoryInfo = () => {
                 <h4>Radio</h4>
             </div>
         </div>
-        `
-    )
+      `
+   )
 }
 
 export default UserStoryInfo
