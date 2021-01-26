@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	list-style:none;
+	outline:none;
+	font-family:instagramfont;
+}
+body{
+	background-color:var(--background-color);
+}
+:root{
+	--primary-color:#0195f9;
+	--background-color:#1a1a1a;
+}
+
+@font-face{
+	font-family:'instagramFont';
+	src:url('../font/Freight Sans Book/Freight Sans Book.otf');
+
+}
