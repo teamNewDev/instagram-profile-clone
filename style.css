@@ -140,6 +140,7 @@ a {
 
 button {
     width: 7.5em;
+    margin: 0 0.3em;
     border: none;
     text-align: center;
     background: black;
