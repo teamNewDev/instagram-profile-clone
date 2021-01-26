@@ -5,19 +5,18 @@ import UserButtons from './modules/UserButtons.js';
 import UserStoryInfo from './modules/UserStoryInfo.js';
 import Gallery from './modules/Gallery.js';
 
-
-const App = () => 
-        {
-            return(
-            `
-            ${TopBar()}
-            ${NavBottom()}
-            ${ProfileInfo()}
-            ${UserButtons()}
-            ${UserStoryInfo()}
-            ${Gallery()}
-            `
-            )
-    }
+const App = () => {
+  return(
+    `
+       ${TopBar()}
+       ${NavBottom()}
+       ${ProfileInfo()}
+       ${UserButtons()}
+       ${UserStoryInfo()}
+       ${Gallery()}
+   `
+     )
+  }
 
 document.querySelector('.instagram__page').innerHTML = App();
+
