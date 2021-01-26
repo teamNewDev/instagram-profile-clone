@@ -9,39 +9,39 @@ import Tags from "./modules/tags.js";
 import Layer1 from "./modules/layer1.js";
 import Layer2 from "./modules/layer2.js";
 
-//shotcut function
+//shotcut function to getElementById
 function byId(id) {
     return document.getElementById(id);
 }
 
-//Set layer1
-byId("layer1").innerHTML = Layer1;
+//Set first layer of the app
+byId("layer1").innerHTML = Layer1();
 
-//Set layer2
-byId("layer2").innerHTML = Layer2;
+//Set second layer of the app
+byId("layer2").innerHTML = Layer2();
 
 
 //Set tabs from module
-document.querySelector(".tab").innerHTML = Tabs;
+document.querySelector(".tab").innerHTML = Tabs();
 
 
 //Set status from module
-byId("layer3").innerHTML = Status;
+byId("layer3").innerHTML = Status();
 
 //Set footer from module
-byId("layer5").innerHTML = Footer;
+byId("layer5").innerHTML = Footer();
 
 //Set footer for page3 from module
-byId("layer6").innerHTML = Footer;
+byId("layer6").innerHTML = Footer();
 
 //set images from module
 byId("galleryTab").innerHTML = Images;
 
 //set videos from module
-byId("videoTab").innerHTML = Videos;
+byId("videoTab").innerHTML = Videos();
 
 //set channels from module
-byId("channelTab").innerHTML = Channels;
+byId("channelTab").innerHTML = Channels();
 
 //set tags from module
 byId("tagTab").innerHTML = Tags;

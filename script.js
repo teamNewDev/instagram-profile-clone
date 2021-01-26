@@ -1,14 +1,15 @@
-//shortcut
-
+//shortcut to getElementById
 function byId(id) {
     return document.getElementById(id);
 }
 
-function set(key, data) {
+//set localStorage item
+function setItem(key, data) {
     return localStorage.setItem(key, data);
 }
 
-function get(key) {
+//get localStorage item
+function getItem(key) {
     return localStorage.getItem(key);
 }
 
@@ -24,6 +25,7 @@ function page(data) {
         }
         var page = byId(data);
         page.style.display = "block";
+        //animate page entry (slide)
         var ani = anime({
             targets: '#' + data,
             duration: 500,
@@ -33,8 +35,8 @@ function page(data) {
             easing: 'linear',
             direction: 'alternate',
         });
-        //twerk to retain scroll point
-        document.body.scrollTo(0,get("scrollTop"));
+        //trick to retain scroll point
+        document.body.scrollTo(0,getItem("scrollTop"));
     }catch(e){
         console.log(e);
     }
@@ -45,7 +47,7 @@ setTimeout(function(){
   page("page2");
 },5000);
 
-
+//used to open tabs
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -68,6 +70,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.classList.add("active");
 }
 var elem = document.querySelector(".image_info img");
+//open in fullscreen
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -82,8 +85,10 @@ byId("menu_dots").onclick = function(){
   openFullscreen();
 }
 
+//open images onclick
 function openImage(src){
-  set("scrollTop",document.body.scrollTop);
+  //store the scroll point to retain later
+  setItem("scrollTop",document.body.scrollTop);
   byId("image").src = src;
   page("page3");
 }
