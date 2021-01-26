@@ -20,3 +20,4 @@ const App = () => {
 
 document.querySelector('.instagram__page').innerHTML = App();
 
+
