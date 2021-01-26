@@ -1,10 +1,6 @@
-
-
-const ProfileInfo = () => 
-       {
-
-       return(
-        `
+const ProfileInfo = () => {
+  return(
+      `
         <div class="profile__info container">
         <div class="profile__info__main">
         <div class="profile__info__main__photo">
@@ -44,9 +40,10 @@ const ProfileInfo = () =>
         </div>
         </div>
         </div>
-        `
-       )
-    }
+      `
+   )
+}
 
 
 export default ProfileInfo;
+
