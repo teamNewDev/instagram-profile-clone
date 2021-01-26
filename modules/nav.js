@@ -1,4 +1,4 @@
-const nav = `
+const Nav = () =>  `
 <nav class="main-nav">
     <div class="home"><i class="fas fa-home"></i></div>
     <div class="search  active"><i class="fas fa-search  active"></i></div>
@@ -8,4 +8,4 @@ const nav = `
 </nav>
 `
 
-export default nav
+export default Nav

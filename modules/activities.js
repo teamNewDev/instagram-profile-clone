@@ -1,4 +1,4 @@
-const activities = `
+const Activities = () =>  `
 <div class="activities">
     <div class="activity">
         <img alt="DJing's profile picture" class="NCYx-" src="https://instagram.fbni1-1.fna.fbcdn.net/v/t51.2885-15/e35/c45.512.1035.1035a/s150x150/106273079_2642031592676530_15452110712306974_n.jpg?_nc_ht=instagram.fbni1-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=igd8PjNXyQoAX8hwDK8&tp=1&oh=b3defff957401859fd68e04f85d59f0c&oe=600DB5BA">
@@ -35,4 +35,4 @@ const activities = `
 </div>
 `
 
-export default activities
+export default Activities

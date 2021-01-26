@@ -1,4 +1,4 @@
-const buttons = `
+const Buttons = () => `
 <div class="buttons">
     <button class="primary">Follow</button>
     <button>Message</button>
@@ -7,4 +7,4 @@ const buttons = `
 </div>
 `
 
-export default buttons
+export default Buttons

@@ -1,4 +1,4 @@
-const bio = `
+const Bio = () => `
 <div class="bio">
     <p class="bio-text a">Cuppy</p>
     <p class="bio-text">☆ DJ, Artist, & Philanthropist 🇳🇬💕</p>
@@ -12,4 +12,4 @@ const bio = `
 `
 
 
-export default bio
+export default Bio

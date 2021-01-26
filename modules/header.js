@@ -1,4 +1,4 @@
-const header =  `
+const Header = () =>  `
 <header>
     <div class="arrow head-icon">
         <i class="fas fa-arrow-left"></i>
@@ -11,4 +11,4 @@ const header =  `
     </div>
 </header>`
 
-export default header
+export default Header
