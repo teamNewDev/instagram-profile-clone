@@ -6,7 +6,7 @@ import Gallery from './modules/Gallery.js'
 import Header from './modules/Header.js'
 import Nav from './modules/Nav.js'
 
-const app = () => {
+const App = () => {
     return (
         `
         ${Header()}
@@ -20,4 +20,4 @@ const app = () => {
     )
 }
 
-document.getElementById('root').innerHTML = app()
+document.getElementById('root').innerHTML = App()
