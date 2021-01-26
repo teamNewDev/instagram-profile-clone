@@ -22,9 +22,9 @@ const UserButtons = () => {
                 </svg>
             </button>
         </div>
-        `
-        )
-    }
+      `
+   )
+}
 
 export default UserButtons;
 
