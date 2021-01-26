@@ -1,8 +1,5 @@
-
-
-const UserButtons = () => 
-        {
-            return (
+const UserButtons = () => {
+  return (
         `
         <div class="user__buttons container">
             <button class="follow__button button">Follow</button>
@@ -29,4 +26,5 @@ const UserButtons = () =>
         )
     }
 
-export default UserButtons
+export default UserButtons;
+
