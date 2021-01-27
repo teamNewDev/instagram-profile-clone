@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(41, 41, 41);
     font-family: 'Poppins', sans-serif;
     color: #FAFAFA;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -20,9 +20,9 @@ body{
     position: fixed;
 }
 
-.content-container{
+.content-container {
     max-width: 414px;
-    max-height: 734px;
+    max-height: 815px;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -31,13 +31,13 @@ body{
     background-color: #1A1A1A;
 }
 
-.nav__header{
+.nav__header {
     display: flex;
     align-items: center;
     padding: 11px 18px;
 }
 
-.nav__header i{
+.nav__header i {
     font-weight: 100;
     font-size: 20px;
     border-radius: 50%;
@@ -46,11 +46,11 @@ body{
     transition: 0.4s;
 }
 
-.nav__header i:first-child:hover{
-     background: rgba(247, 244, 244, 0.179);
+.nav__header i:first-child:hover {
+    background: rgba(247, 244, 244, 0.179);
 }
 
-.nav__header span{
+.nav__header span {
     flex: 1;
     font-size: 16px;
     font-weight: 500;
@@ -59,14 +59,14 @@ body{
     margin-left: 24px;
 }
 
-.nav__header span i{
+.nav__header span i {
     transform: scale(0.6);
     margin-left: 1px;
     color: #0095F6;
     font-weight: 600;
 }
 
-.nav__footer{
+.nav__footer {
     height: 30px;
     width: 100vw;
     max-width: 414px;
@@ -77,11 +77,11 @@ body{
     padding: 28px 0;
 }
 
-.nav__footer i{
+.nav__footer i {
     transform: scale(1.5);
 }
 
-.nav__footer img{
+.nav__footer img {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -97,13 +97,13 @@ body{
     overflow-x: hidden;
 }
 
-.bio{
+.bio {
     display: flex;
     align-items: center;
     padding: 11px 18px;
 }
 
-.profile__info{
+.profile__info {
     display: flex;
     flex: 1;
     justify-content: space-around;
@@ -112,7 +112,7 @@ body{
     margin-left: 20px;
 }
 
-.profile__image{
+.profile__image {
     background: linear-gradient(#B3079D, #FDB14A);
     height: 94px;
     width: 94px;
@@ -122,15 +122,15 @@ body{
     align-items: center;
 }
 
-.profile__image img{
-    width:90px;
+.profile__image img {
+    width: 90px;
     height: 90px;
     border-radius: 50%;
     padding: 2px;
     background-color: #1A1A1A;
 }
 
-.profile__info .data p{
+.profile__info .data p {
     font-size: 16px;
 }
 
@@ -138,51 +138,51 @@ body{
     font-size: 20px;
 }
 
-.profile__about{
+.profile__about {
     padding: 0 20px;
     margin-top: 10px;
 }
 
-.profile__about img{
+.profile__about img {
     height: 20px;
 }
 
-.fa-star{
+.fa-star {
     font-size: 13px;
     font-weight: 300;
     margin-right: 3px;
 }
 
-.profile__about p{
+.profile__about p {
     font-size: 15px;
     padding: 2px 0;
 }
 
-.profile__about .gray{
+.profile__about .gray {
     color: grey;
 }
 
-.profile__about .blue{
+.profile__about .blue {
     color: #40C0E7;
     font-weight: bolder;
     font-size: 20px;
     letter-spacing: 3px;
 }
 
-.profile__about .bold{
+.profile__about .bold {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 14px;
 }
 
-.profile__contact{
+.profile__contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 18px;
 }
 
-.profile__contact button{
+.profile__contact button {
     font-size: 14px;
     padding: 10px 10px;
     background-color: #0c0c0c;
@@ -191,7 +191,7 @@ body{
     border-radius: 5px;
 }
 
-.profile__contact a{
+.profile__contact a {
     font-size: 14px;
     padding: 7px 24px;
     background-color: #0c0c0c;
@@ -201,7 +201,7 @@ body{
     border: 1px solid #4B4B4B;
 }
 
-.profile__contact .blue{
+.profile__contact .blue {
     border: unset;
     background-color: #0095F6;
     padding: 10px 27px;
@@ -209,7 +209,7 @@ body{
 
 /*  profession */
 
-.profession .image{
+.profession .image {
     background: linear-gradient(#B3079D, #FDB14A);
     height: 74px;
     width: 74px;
@@ -227,13 +227,13 @@ body{
     background-color: #1A1A1A;
 }
 
-.profession{
+.profession {
     display: flex;
     justify-content: space-around;
     padding: 0 10px;
 }
 
-.profession p{
+.profession p {
     text-align: center;
     font-size: 13px;
     padding-top: 7px;
@@ -241,22 +241,23 @@ body{
 
 /* Gallery section */
 
-.gallery__icons{
+.gallery__icons {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 14px;
     border-top: 1px solid #242323;
+    cursor: pointer;
 }
 
-.gallery__icons i{
+.gallery__icons i {
     transform: scale(1.6);
     color: #858585;
     padding: 17px 13px 6px 18px;
 }
 
-.gallery__icons .active-gallery{
+.gallery__icons .active-gallery {
     color: #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
     padding-left: 15px;
@@ -271,7 +272,8 @@ body{
     margin-right: 15px;
 }
 
-.gallery, .gallery2{
+.gallery,
+.gallery2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
     grid-template-rows: auto;
@@ -282,13 +284,15 @@ body{
     width: 100%;
 }
 
-.gallery img, .gallery2 img{
+.gallery img,
+.gallery2 img {
     width: 100%;
     height: 100px;
     object-fit: cover;
 }
 
-.gallery .image, .gallery2 .image {
+.gallery .image,
+.gallery2 .image {
     width: 100%;
     height: 100px;
     cursor: pointer;
@@ -307,11 +311,13 @@ body{
 }
 
 .gallery .image,
-.gallery .video, .gallery2 .image {
+.gallery .video,
+.gallery2 .image {
     position: relative;
 }
 
-.gallery i, .gallery2 i {
+.gallery i,
+.gallery2 i {
     position: absolute;
     z-index: 3;
     right: 10px;
@@ -321,7 +327,10 @@ body{
 
 /* series */
 
-.series, .videos, .gallery, .gallery2{
+.series,
+.videos,
+.gallery,
+.gallery2 {
     margin-top: 14px;
     display: none;
 }
@@ -330,18 +339,19 @@ body{
     display: grid;
 }
 
-.series > span{
+.series>span {
     padding: 0 13px;
 }
 
-.series__container, .video__container{
+.series__container,
+.video__container {
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
     flex-wrap: wrap;
 }
 
-.single-series:first-child{
+.single-series:first-child {
     margin-top: 10px;
 }
 
@@ -349,7 +359,8 @@ body{
     margin-top: 10px;
 }
 
-.single-series, .video-series{
+.single-series,
+.video-series {
     position: relative;
     width: 49%;
     border-radius: 13px;
@@ -358,7 +369,7 @@ body{
     margin-bottom: 7px;
 }
 
-.video-series{
+.video-series {
     border-radius: 0px;
 }
 
@@ -385,7 +396,7 @@ body{
     font-size: 14px;
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -395,14 +406,14 @@ body{
     flex-direction: column;
 }
 
-.image-container{
+.image-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.overlay .image-box{
+.overlay .image-box {
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -410,7 +421,7 @@ body{
     z-index: 9;
 }
 
-.slide-up-menu{
+.slide-up-menu {
     background: #262626f3;
     position: absolute;
     height: 50vh;
@@ -424,7 +435,7 @@ body{
     transition: 0.5s ease-in;
 }
 
-.slide-up-menu div{
+.slide-up-menu div {
     height: 5px;
     width: 40px;
     background-color: #737373;
@@ -441,12 +452,39 @@ body{
     padding: 15px 0;
 }
 
-.slide-up-menu li{
+.slide-up-menu li {
     list-style: none;
     color: #F8F8F8;
 }
 
-@media only screen and (min-width: 414px){
+@media only screen and (max-width: 380px) {
+    .profile__contact button {
+        font-size: 12px;
+        padding: 10px 10px;
+        background-color: #0c0c0c;
+        color: white;
+        border: 1px solid #4B4B4B;
+        border-radius: 5px;
+    }
+
+    .profile__contact a {
+        font-size: 12px;
+        padding: 7px 24px;
+        background-color: #0c0c0c;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid #4B4B4B;
+    }
+
+    .profile__contact .blue {
+        border: unset;
+        background-color: #0095F6;
+        padding: 10px 27px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
     .profile__contact a {
         padding: 7px 24px;
         font-size: 16px;
@@ -458,7 +496,8 @@ body{
     }
 }
 
-@media only screen and (min-width: 415px){
+@media only screen and (min-width: 415px) {
+
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
@@ -482,7 +521,8 @@ body{
     }
 }
 
-@media only screen and (min-width: 728px){
+@media only screen and (min-width: 728px) {
+
     .series,
     .videos,
     .gallery,
@@ -625,7 +665,7 @@ body{
         padding-top: 7px;
     }
 
-    
+
 
     .gallery {
         display: grid;
