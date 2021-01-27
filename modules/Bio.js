@@ -1,26 +1,30 @@
 import Gallery from './Gallery.js'
+import Series from './Series.js'
+import Video from './Video.js'
+import Video2 from './Video2.js'
+import Gallery2 from './Gallery2.js'
 
-const Bio = () => 
-               `<div class="about">
-                  <div class="bio">
-                    <div class="profile__image">
-                        <img src="https://instagram.flos1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/130447775_695242761181127_6570908212231106919_n.jpg?_nc_ht=instagram.flos1-1.fna.fbcdn.net&_nc_ohc=gTqn5sI4CM0AX9VeSlT&tp=1&oh=5a6ad9f3a66d299978da229ff4fb046c&oe=603375C6" alt="">
-                    </div>
-                    <div class="profile__info">
-                        <div class="data">
-                        <h4>4,258</h4>
-                        <p>Posts</p>
+const Bio = () =>
+                 `<div class="about">
+                        <div class="bio">
+                            <div class="profile__image">
+                                <img src="images/profile.jpg" alt="">
+                            </div>
+                            <div class="profile__info">
+                            <div class="data">
+                                <h4>4,258</h4>
+                                <p>Posts</p>
+                            </div>
+                            <div class="data">
+                                <h4>6.8M</h4>
+                                <p>Followers</p>
+                            </div>
+                            <div class="data">
+                                <h4>4,258</h4>
+                                <p>Following</p>
+                            </div>
+                            </div>
                         </div>
-                        <div class="data">
-                        <h4>6.8M</h4>
-                        <p>Followers</p>
-                        </div>
-                        <div class="data">
-                        <h4>4,258</h4>
-                        <p>Following</p>
-                        </div>
-                    </div>
-                  </div>
 
                  <!--- profile description --->
 
@@ -52,19 +56,19 @@ const Bio = () =>
                         </span>
                         <span>
                           <div class="image">
-                            <img src="music.jpg" alt="">
+                            <img src="images/music.jpg" alt="">
                           </div>
                           <p>Music</p>
                         </span>
                         <span>
                           <div class="image">
-                            <img src="radio.jpg" alt="">
+                            <img src="images/radio.jpg" alt="">
                           </div>
                           <p>Radio</p>
                         </span>
                         <span>
                           <div class="image">
-                            <img src="charity.jpg" alt="">
+                            <img src="images/charity.jpg" alt="">
                           </div>
                           <p>Charity</p>
                         </span>
@@ -73,8 +77,8 @@ const Bio = () =>
                     <!--  Gallery Icons -->
 
                     <div class="gallery__icons">
-                        <i class="fal fa-th"></i>
-                        <i class="fal fa-tv"></i>
+                        <i class="fal fa-th active-gallery"></i>
+                        <i class="fal fa-tv "></i>
                         <i class="fal fa-video"></i>
                         <i class="fal fa-magic" style="font-weight: 100;"></i>
                         <i class="fal fa-user-nurse" style="font-weight: 100;"></i>
@@ -82,7 +86,20 @@ const Bio = () =>
 
                     <!-- Photo and Video Collection (Gallery) -->
 
-                    ${ Gallery() }
-                </div>`;
+                    ${Gallery()}
+                
+                    <!-- series -->
+                    ${Series()}
+                
+                    <!-- videos -->
+                    ${Video()}
+
+                    <!-- video 2 -->
+
+                    ${Video2()}
+
+                    <!-- Gallery 2 -->
+                    ${Gallery2()}
+                </div>`
 
 export default Bio

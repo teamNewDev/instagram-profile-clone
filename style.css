@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(41, 41, 41);
     font-family: 'Poppins', sans-serif;
     color: #FAFAFA;
 }
@@ -19,6 +17,7 @@ body{
     height: 100vh;
     display: grid;
     place-content: center;
+    position: fixed;
 }
 
 .content-container{
@@ -41,6 +40,14 @@ body{
 .nav__header i{
     font-weight: 100;
     font-size: 20px;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav__header i:first-child:hover{
+     background: rgba(247, 244, 244, 0.179);
 }
 
 .nav__header span{
@@ -249,17 +256,22 @@ body{
     padding: 17px 13px 6px 18px;
 }
 
-.gallery__icons i:first-child{
+.gallery__icons .active-gallery{
     color: #E5E5E5;
     border-bottom: 1px solid #E5E5E5;
+    padding-left: 15px;
+}
+
+.gallery__icons i:first-child {
     padding-left: 25px;
+    margin-bottom: 10px;
 }
 
 .gallery__icons i:last-child {
     margin-right: 15px;
 }
 
-.gallery{
+.gallery, .gallery2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
     grid-template-rows: auto;
@@ -270,13 +282,13 @@ body{
     width: 100%;
 }
 
-.gallery img{
+.gallery img, .gallery2 img{
     width: 100%;
     height: 100px;
     object-fit: cover;
 }
 
-.gallery .image {
+.gallery .image, .gallery2 .image {
     width: 100%;
     height: 100px;
     cursor: pointer;
@@ -295,16 +307,143 @@ body{
 }
 
 .gallery .image,
-.gallery .video {
+.gallery .video, .gallery2 .image {
     position: relative;
 }
 
-.gallery i {
+.gallery i, .gallery2 i {
     position: absolute;
     z-index: 3;
     right: 10px;
     top: 10px;
     pointer-events: none;
+}
+
+/* series */
+
+.series, .videos, .gallery, .gallery2{
+    margin-top: 14px;
+    display: none;
+}
+
+.active {
+    display: grid;
+}
+
+.series > span{
+    padding: 0 13px;
+}
+
+.series__container, .video__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+.single-series:first-child{
+    margin-top: 10px;
+}
+
+.single-series:nth-child(2) {
+    margin-top: 10px;
+}
+
+.single-series, .video-series{
+    position: relative;
+    width: 49%;
+    border-radius: 13px;
+    overflow: hidden;
+    height: 230px;
+    margin-bottom: 7px;
+}
+
+.video-series{
+    border-radius: 0px;
+}
+
+.single-series .info,
+.video-series .info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.522);
+    width: 100%;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+
+.single-series img,
+.video-series img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.single-series span,
+.video-series span {
+    font-size: 14px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1a1a1a;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+}
+
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .image-box{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+}
+
+.slide-up-menu{
+    background: #262626f3;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    padding: 18px;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px 13px 0 0;
+    bottom: -1000px;
+    transition: 0.5s ease-in;
+}
+
+.slide-up-menu div{
+    height: 5px;
+    width: 40px;
+    background-color: #737373;
+    align-self: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slide-up-menu ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.slide-up-menu li{
+    list-style: none;
+    color: #F8F8F8;
 }
 
 @media only screen and (min-width: 414px){
@@ -344,14 +483,18 @@ body{
 }
 
 @media only screen and (min-width: 728px){
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    .series,
+    .videos,
+    .gallery,
+    .gallery2 {
+        margin-top: 14px;
+        display: none;
+    }
 
-
-
-    
     .content-container {
         max-width: 340px;
         max-height: 636px;
+        position: relative;
     }
 
     .nav__header {
@@ -503,5 +646,17 @@ body{
     .gallery .video {
         width: 100%;
         height: 100px;
+    }
+
+    .series,
+    .videos,
+    .gallery,
+    .gallery2 {
+        margin-top: 14px;
+        display: none;
+    }
+
+    .active {
+        display: grid;
     }
 }
