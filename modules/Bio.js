@@ -100,7 +100,7 @@ const Bio = () =>
                     ${Video2()}
 
                     <!-- Gallery 2 -->
-                    ${Gallery2()}
+                    
                 </div>`
 
 export default Bio
