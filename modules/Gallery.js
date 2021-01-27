@@ -14,27 +14,27 @@ const Gallery = () =>
                         </div>
 
                         <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/2.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
 
                         <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/3.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
 
                         <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/4.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
 
                          <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/5.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
 
                         <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/6.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
 
@@ -47,7 +47,7 @@ const Gallery = () =>
                         </div>
 
                         <div class="image">
-                          <img src="images/1.jpg" alt="">
+                          <img src="images/7.jpg" alt="">
                           <i class="fas fa-image"></i>
                         </div>
                     </div>`
