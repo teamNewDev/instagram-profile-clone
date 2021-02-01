@@ -6,10 +6,9 @@ import Gallery2 from './Gallery2.js'
 
 const Bio = () =>
                  `<div class="about">
-
                     <div class="bio">
                       <div class="profile__image">
-                          <img src="images/profile.jpg" alt="">
+                        <img src="images/profile.jpg" alt="">
                       </div>
                       <div class="profile__info">
                         <div class="data">
