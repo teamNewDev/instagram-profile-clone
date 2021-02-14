@@ -1,0 +1,28 @@
+.topbar {
+    height: 7vh;
+    display: flex;
+    background-color: #1a1a1a;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+  /***********LEFT******/
+  .topbar .left {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .topbar .left .fas {
+    margin-right: 10px;
+    color: #fff;
+  }
+  /*************************/
+  
+  /***********RIGHT******/
+  .topbar .right {
+    margin: 0 10px;
+  }
