@@ -1,0 +1,28 @@
+.bio {
+  margin-left: 15px;
+  color: #fff;
+}
+.bio .display-name {
+  display: flex;
+  align-items: center;
+}
+.verified {
+  width: 30px;
+}
+.bio .list {
+  font-size: 14px;
+  list-style: none;
+}
+.list small {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+.bio a {
+  color: #c6e4ff;
+}
+span {
+  color: #c6e4ff;
+  cursor: pointer;
+}
