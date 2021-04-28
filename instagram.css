@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{ 
+    background-color: #fafafa; 
+}
+
+.bio, .activities, .gallery, .footer, .second-footer{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* header section */
+header{
+    background-color:#fff;
+    display: flex;
+    align-items: center; 
+    padding:0.05rem;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+.instagram-logo{
+    margin-left: 15%;
+}
+
+.instagram-logo:hover{
+   cursor: pointer;
+}
+
+header>input{
+    margin-left:20%;
+    border-radius: 3px;
+    padding:0.4rem;
+    width:15%;
+    background-color: #fafafa;
+    border:1px solid #dbdbdb;
+}
+
+header input:placeholder-shown{
+    text-align: center;
+}
+
+header nav{
+    margin-left:7.5%;
+}
+
+header ul{
+    list-style-type: none;
+     display: flex;
+}
+
+header li{
+ padding-left:30px;
+}
+
+
+/* Profile bio */
+.bio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top:2%;
+}
+
+.profile-photo img{
+    border:3px solid #DD3171;
+    padding:0.35rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left:10%;
+}
+
+.bio-info{
+    margin-left:-30%;
+}
+
+.handle{
+    display: flex;
+    align-items: center;
+}
+
+.handle h2{
+    color: #707070;
+}
+.buttons{
+    display:flex;
+}
+
+.follow-btn{
+    padding:0.5rem 1.8rem;
+    width:70%;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #0095F6;
+    border:unset;
+    cursor: pointer;
+}
+
+.more-btn{
+    padding:1rem;
+    margin-left: 0.4rem;
+    width:3%;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #0095F6;
+    border:unset;
+    cursor: pointer;
+}
+
+
+.dots{
+    margin-left:  0.5rem;
+    margin-top: -1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color:#000;
+    cursor: pointer;
+}
+
+.bio-info-1{
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+
+.bio-info-1 a{
+    text-decoration: none;
+    color: #535353;;
+    cursor: pointer;
+}
+
+.number{
+    color: #262626;
+    font-weight: bold;
+}
+
+.followers, .following{
+   padding-left: 3.2rem;
+}
+
+.bio-info-2 p{
+    margin-top:-0.5rem;
+    color:#535353;
+}
+
+.bio-info-2 a{
+   color:#38628B;
+   font-weight: bold;
+   text-decoration: none;
+   
+}
+
+.hashtag{
+    color:#587B9D;
+}
+
+#instagram-followers{
+    font-size: 0.8rem;
+    color:#535353;
+    padding: 0.5rem 0;
+   
+}
+
+#followers-handle{
+    color:#929292;
+}
+
+/*------------For the Activities side -------------------------*/
+.activities{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.activities p{
+    margin-top:1rem;
+    display: flex;
+    justify-content: center;
+}
+.activities a{
+    text-decoration: none;
+    color:#535353;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.activities img{
+    background-color: #F8A3C5;
+    padding:1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow:  2px 2px 10px rgba(0,0,0,.3); 
+}
+
+
+/* ------------------------For the gallery selection -------------------*/
+
+
+.gallery-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:1.5rem;
+    border-top: 2px solid #DBDBDB;
+    padding:2.5rem;
+   
+}
+
+hr{
+  margin-top:-2.5rem;  
+}
+
+
+.gallery-title a{
+    text-decoration: none;
+}
+
+.gallery-header{
+    padding:90px 90px 0px 10px;
+}
+
+
+.gallery-photos{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.2rem;
+    justify-content: baseline;
+}
+
+.photo{
+   max-height: 300px;
+   object-fit: cover;
+    
+}
+
+.photo:hover{
+    transition: 0.4s ease; 
+    filter: contrast(68%); 
+}
+
+
+/* ----------------------For the footer section -------------------------*/
+.first-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top:5rem;
+}
+
+.first-footer li a{
+   font-size: 0.8rem;
+   text-decoration: none;
+   color:#A7A7A7;
+}
+
+
+.second-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#a1a1a1;
+    font-size: 0.8rem;
+    margin-top:-0.5rem;
+}
+
+.languages{
+    color:#a1a1a1;
+    outline: none;
+    border:transparent;
+    margin-left: 5rem;
+    
+}
+.second-footer p{
+    margin-left:-17.5rem;
+    font-size: 0.8rem;
+ 
+}
+
+
+
+
+/* for the next button */
+.next{
+    right: 0;
+    border-radius: 50%;
+    margin-right: 11rem;
+}
+
+
+/* next and previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5rem;
+    padding:0.2rem 0.6rem;
+    transition: 0.6s ease; 
+    border-radius:50%;
+    user-select: none;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.prev{
+    left: 0;
+    margin-left:13rem;
+    border-radius:50%;
+}
+
+/*On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+/* For the query Media Section */
+
+@media(max-width:768px){
+    .bio, .activities, .gallery, .footer, .second-footer{
+        width:100%;
+    }
+    
+    .wrapper{
+       overflow: hidden; 
+    }
+
+    .instagram-logo{
+        margin-left: 4%;
+    }
+    
+header nav{
+    margin-left:4%;
+  
+}
+
+header>input{
+    width:0;
+    visibility:hidden;
+}
+
+
+
+
+    .profile-photo img{  
+        margin-left:5%;
+        height: 5rem;
+        width:5rem ;
+    }
+
+
+    .bio-info-2{
+         margin-left:-157%;
+         margin-top:-20%;
+    }
+    
+    .handle{
+        display:grid;
+        margin-left:-90%;
+    }
+
+   .buttons{
+    margin-left:-7%;
+   }
+
+   .follow-btn{
+    padding:0.5rem;
+    width:15%;
+   }
+
+   .more-btn{
+    width:1%;
+   }
+    
+    .bio-info{
+        margin-left:30%;
+        
+    }
+
+
+    .bio-info-1{
+       visibility: hidden;
+    }
+
+ .gallery-photos{
+    grid-gap: 0.05rem;
+
+ }
+
+.photo img{
+    height: 9.375rem;
+    width:9.375rem;
+}
+
+
+.activities{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 10px;
+   
+}
+
+.activities img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.activities p{
+    width:4rem;
+}
+
+#activity-log6{
+    margin-top:1rem;
+}
+
+
+.first-footer{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+  column-gap: 10px;
+   margin-left: 0rem;
+   margin-right: 2rem;
+}
+
+.second-footer p{
+    margin-left:-7.5rem;
+ 
+}
+
+
+
+
+.next{
+    margin-right: 2rem;
+}
+
+.prev{
+    margin-left:0;  
+}
+
+}
