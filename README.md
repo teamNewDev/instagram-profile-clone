@@ -1,2 +1,2 @@
-# instagram-profile-clone
+## instagram-profile-clone
 Instagram profile clone
