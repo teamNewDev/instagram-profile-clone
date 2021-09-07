@@ -1,0 +1,27 @@
+.options-cont {
+  width: 100%;
+  position: fixed;
+  display: none;
+  top: 20%;
+  z-index: 100;
+}
+.options-cont.active {
+  display: block;
+}
+.options {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 10px;
+  height: 60vh;
+}
+.options ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-left: 10px;
+}

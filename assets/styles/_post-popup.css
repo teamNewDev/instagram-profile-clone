@@ -1,0 +1,81 @@
+.post-popup-cont {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 25%;
+  display: none;
+}
+.post-popup-cont.active {
+  display: block;
+}
+.post-popup {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.post-popup .photo {
+  object-fit: contain;
+  background-image: url(../img/cuppy.jpg);
+  height: 350px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.photo .fa-heart {
+  font-size: 0px;
+  animation-name: pop;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  display: none;
+}
+.photo .fa-heart.active {
+  display: block;
+}
+@keyframes pop {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 80px;
+  }
+  100% {
+    font-size: 0px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-start;
+  width: 90%;
+}
+.actions .fa-heart {
+  color: transparent;
+  -webkit-text-stroke: 0.1px #fff;
+}
+.actions .fa-heart.active {
+  color: #fff;
+}
+.actions .fa-comment {
+  color: transparent;
+  -webkit-text-stroke: 0.1px #fff;
+}
+.actions .fa-paper-plane {
+  color: transparent;
+  -webkit-text-stroke: 0.1px #fff;
+}
+.actions .fas {
+  margin: 0 5px;
+}

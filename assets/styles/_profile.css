@@ -1,0 +1,53 @@
+.profile .cont {
+  display: flex;
+  justify-content: space-between;
+  height: 25vh;
+  margin-top: 25px;
+  align-items: center;
+  padding: 0 20px;
+}
+/***********RIGHT******/
+.profile .cont .right {
+  display: flex;
+}
+.profile .cont .right .dp {
+  border-radius: 100px;
+  width: 103px;
+  height: 103px;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 55%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile .cont .right .dp .pic {
+  border-radius: 100px;
+  width: 90px;
+  border: 4px solid #1a1a1a;
+}
+/*************************/
+/***********LEFT******/
+.profile .cont .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.left .stats {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.left .stats .stat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+.stats .stat b {
+  font-size: 16px;
+}

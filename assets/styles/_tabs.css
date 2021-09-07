@@ -1,0 +1,11 @@
+.tabs {
+  width: 100%;
+}
+.tabs-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  height: 7vh;
+}

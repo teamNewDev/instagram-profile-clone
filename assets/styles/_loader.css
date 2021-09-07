@@ -1,0 +1,42 @@
+.loader {
+  background: #1a1a1a;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: wait;
+}
+.loader.loaded {
+  display: none;
+}
+
+.loader-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loader-content img {
+  width: 50%;
+}
+.loader-content .text {
+  text-align: center;
+  transform: translateY(450%);
+}
+.loader-content .text p {
+  background: linear-gradient(
+    45deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 55%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
